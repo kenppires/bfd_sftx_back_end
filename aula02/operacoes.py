@@ -7,7 +7,7 @@ Div /
 Div int //
 DIv Modulo %
 
-OP. LOGICOS
+OP. RELACIONAIS
 igual ==
 dif. !=
 maior >
