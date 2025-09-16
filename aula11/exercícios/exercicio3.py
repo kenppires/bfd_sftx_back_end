@@ -13,6 +13,7 @@ class Carro:
 carro1 = Carro("Honda","Civic",2011)
 carro2 = Carro("VW","Fusca",1995)
 carro3 = Carro("Ford","Mustang",2001)
+
 print(carro1)
 print(20*"-")
 print(carro2)

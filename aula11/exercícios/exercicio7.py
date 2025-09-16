@@ -5,10 +5,6 @@ class Aluno:
     def __init__(self, nome, nota):
         self.nome = nome
         self.nota = nota
-    
-    def __str__(self):
-        return f"{self.nome} - Nota: {self.nota}"
-
 
 class Turma:
     def __init__(self):
@@ -16,3 +12,13 @@ class Turma:
 
     def adicionar_aluno(self, aluno):
         self.alunos.append(aluno)
+        print(f"Aluno {aluno.nome} adicionado à turma.")
+
+aluno1 = Aluno("João", 8.5)
+aluno2 = Aluno("Maria", 9.0)
+aluno3 = Aluno("Pedro", 7.5)
+
+turma = Turma()
+turma.adicionar_aluno(aluno1)
+turma.adicionar_aluno(aluno2)
+turma.adicionar_aluno(aluno3)

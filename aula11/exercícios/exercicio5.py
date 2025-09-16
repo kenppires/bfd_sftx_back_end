@@ -2,7 +2,7 @@
 # saldo e um método sacar(valor) que diminui o saldo (se houver saldo suficiente). Teste com depósitos e saques.
 
 class ContaBancaria:
-    def __init__(self, titular, saldo):
+    def __init__(self, titular, saldo=0):
         self.titular = titular
         self.saldo = saldo
     
@@ -21,7 +21,7 @@ class ContaBancaria:
             print(40*"-")
 
 
-conta = ContaBancaria("José",500)
-conta.depositar(200)
+conta = ContaBancaria("José")
+conta.depositar(1200)
 conta.sacar(600)
 conta.sacar(1000)

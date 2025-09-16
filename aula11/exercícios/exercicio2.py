@@ -6,8 +6,8 @@ class Pessoa:
         self.nome = nome
         self.idade = idade
 
-    def __str__(self):
-        return f"Olá, meu nome é {self.nome} e tenho {self.idade} anos."
+    def apresentar(self):
+        print(f"Olá, meu nome é {self.nome} e tenho {self.idade} anos.")
     
-pessoa1 = Pessoa("João",25)
-print(pessoa1)
+pessoa1 = Pessoa("João", 25)
+pessoa1.apresentar()

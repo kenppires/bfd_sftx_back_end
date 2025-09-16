@@ -2,8 +2,12 @@
 # Em seguida, crie dois objetos dessa classe e imprima os valores de seus atributos.
 
 class Pessoa:
-    nome = "João Bezerra"
-    idade = 83
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
 
-joao = (f"Nome: {Pessoa.nome}", f"Idade: {Pessoa.idade}")
-print(joao)
+p1 = Pessoa("João", 25)
+p2 = Pessoa("Maria", 30)
+
+print(f"Pessoa 1: Nome - {p1.nome}, Idade - {p1.idade}")
+print(f"Pessoa 2: Nome - {p2.nome}, Idade - {p2.idade}")

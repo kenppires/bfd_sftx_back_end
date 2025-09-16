@@ -14,24 +14,18 @@ class ContaBancaria:
     def sacar(self, valor):
         if self.saldo >= valor:
             self.saldo -= valor
-            print(f"Saque realizado. \n>Novo Saldo:{self.saldo:.2f}")
-            print(40*"-")
             return True
         else:
-            print("Saldo insuficiente!")
-            print(40*"-")
             return False
 
-
 conta = ContaBancaria("José",1000)
-conta.depositar(500)
 
 if conta.sacar(200):
-    print(f"Saque concluído")
+    print(f"Saque concluído \n>Saldo atual: R${conta.saldo}")
 else:
-    print(f"Não foi possível realizar o saque.") 
+    print(f"Não foi possível realizar o saque. \n>Saldo Insuficiente.") 
 
 if conta.sacar(3000):
-    print(f"Saque concluído")
+    print(f"Saque concluído \n>Saldo atual: R${conta.saldo}")
 else:
-    print(f"Não foi possível realizar o saque. \nSaldo:{conta.saldo}") 
+    print(f"Não foi possível realizar o saque. \n>Saldo Insuficiente.")
