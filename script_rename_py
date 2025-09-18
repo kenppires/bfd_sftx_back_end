@@ -1,0 +1,34 @@
+import os
+
+pasta_destino = "aula14"
+
+# Verifica se a pasta existe antes de tentar renomear
+if os.path.exists(pasta_destino):
+    # Obtém uma lista de todos os arquivos na pasta
+    arquivos = os.listdir(pasta_destino)
+    
+    # Adiciona um contador para os novos nomes
+    contador = 1
+    
+    # Percorre a lista de arquivos
+    for nome_antigo in arquivos:
+        # Pega a extensão do arquivo (por exemplo, '.py')
+        extensao = os.path.splitext(nome_antigo)[1]
+        
+        # Cria o novo nome do arquivo usando o contador
+        novo_nome = f"exercício{contador}{extensao}"
+        
+        # Constrói o caminho completo para o arquivo antigo e o novo
+        caminho_antigo = os.path.join(pasta_destino, nome_antigo)
+        caminho_novo = os.path.join(pasta_destino, novo_nome)
+        
+        # Renomeia o arquivo
+        os.rename(caminho_antigo, caminho_novo)
+        
+        print(f"'{nome_antigo}' renomeado para '{novo_nome}'")
+        
+        # Incrementa o contador
+        contador += 1
+
+else:
+    print(f"A pasta '{pasta_destino}' não foi encontrada.")
