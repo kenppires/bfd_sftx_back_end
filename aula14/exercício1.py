@@ -11,6 +11,9 @@ class Usuario:
         return (f"Nome: {self.nome}\nEmail:{self.email}")
 
 class Cliente(Usuario):
+    def __init__(self, nome, email):
+        super().__init__(nome, email)
+
     def __str__(self):
        return super().__str__()
     
