@@ -47,5 +47,3 @@ print("\n-Aluno-")
 aluno1.falar()
 aluno1.andar()
 aluno1.comer()
-
--

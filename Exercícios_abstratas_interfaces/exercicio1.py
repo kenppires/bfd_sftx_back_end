@@ -2,43 +2,40 @@
 # as subclasses Funcionário e Aluno, que herde as características e Métodos de Pessoa. 
 # Instancie um objeto para cada subclasse.
 
-from abc import ABC
+from abc import ABC, abstractmethod
 
 class Pessoa(ABC):
+    @abstractmethod
     def falar(self):
-        ...
-        
-    def andar(self):
-        ...
+        print(f"O {self.__class__.__name__} está falando...")
 
+    @abstractmethod
+    def andar(self):
+        print(f"O {self.__class__.__name__} está andando...")
+
+    @abstractmethod
     def comer(self):
-        ...
+        print(f"O {self.__class__.__name__} está comendo...")
 
 class Funcionario(Pessoa):
-    def __init__(self):
-        super().__init__
-
     def falar(self):
-        print(f"O funcionário está falando")
-        
+        return super().falar()
+
     def andar(self):
-        print(f"O funcionário está andando")
+        return super().andar()
         
     def comer(self):
-        print(f"O funcionário está comendo")
+        return super().comer()
 
 class Aluno(Pessoa):
-    def __init__(self):
-        super().__init__
-
     def falar(self):
-        print(f"O Aluno está falando")
-        
+        return super().falar()
+
     def andar(self):
-        print(f"O Aluno está andando")
+        return super().andar()
         
     def comer(self):
-        print(f"O Aluno está comendo")
+        return super().comer()
 
 funcionario1 = Funcionario()
 aluno1 = Aluno()
@@ -52,5 +49,3 @@ print("\n-Aluno-")
 aluno1.falar()
 aluno1.andar()
 aluno1.comer()
-
--
