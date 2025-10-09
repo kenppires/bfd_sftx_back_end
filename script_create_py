@@ -1,9 +1,9 @@
 # import os
 
-# pasta_destino = "Exercícios_abstratas_interfaces" #digitar nome da pasta
+# pasta_destino = "Exercícios_abstratas" #digitar nome da pasta
 
 # # (1,11) Loop para criar os 10 arquivos
-# for i in range(1, 3):
+# for i in range(1, 5):
 #     nome_arquivo = f"exercicio{i}.py"
 #     caminho_completo = os.path.join(pasta_destino, nome_arquivo)
 
