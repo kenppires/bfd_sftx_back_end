@@ -1,6 +1,6 @@
 # import os
 
-# pasta_destino = "Exercícios_abstratas" #digitar nome da pasta
+# pasta_destino = "Exercícios_interfaces" #digitar nome da pasta
 
 # # (1,11) Loop para criar os 10 arquivos
 # for i in range(1, 5):
