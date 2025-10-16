@@ -1,9 +1,9 @@
 # import os
 
-# pasta_destino = "Exercícios_interfaces" #digitar nome da pasta
+# pasta_destino = "Exercícios_associa_agrega_compos" #digitar nome da pasta
 
 # # (1,11) Loop para criar os 10 arquivos
-# for i in range(1, 5):
+# for i in range(1, 7):
 #     nome_arquivo = f"exercicio{i}.py"
 #     caminho_completo = os.path.join(pasta_destino, nome_arquivo)
 
